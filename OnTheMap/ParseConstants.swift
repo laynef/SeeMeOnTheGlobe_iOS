@@ -9,7 +9,7 @@
 struct ParseConstants {
     static let apiKey: String = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
     static let appId: String = "QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr"
-    static let baseURL: String = ""
+    static let baseURL: String = "https://api.parse.com/1/classes/StudentLocation"
 }
 
 struct ParseResponseKeys {
@@ -28,3 +28,18 @@ struct ParseResponseKeys {
     static let updatedAt: String = "updatedAt"
 }
 
+struct ParseStudentLocation: CustomStringConvertible {
+    var objectId: String
+    var uniqueKey: String
+    var firstName: String
+    var lastName: String
+    var mapString: String
+    var mediaURL: String
+    var latitude: Float
+    var longitude: Float
+    
+    var description: String {
+        return "ParseStudentLocation: \(objectId)-\(uniqueKey)"
+    }
+    
+}

@@ -10,4 +10,10 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
+    @IBOutlet weak var refreshListButton: UIBarButtonItem!
+    @IBOutlet weak var pinListButton: UIBarButtonItem!
+    @IBOutlet weak var logoutListButton: UIBarButtonItem!
+    
+    
+    
 }
