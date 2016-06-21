@@ -204,13 +204,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-ul-GAz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-ul-GAz">
                                 <rect key="frame" x="20" y="530" width="560" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Find on the Map"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter your locaiton here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ojv-4l-II0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your locaiton here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ojv-4l-II0">
                                 <rect key="frame" x="0.0" y="94" width="600" height="394"/>
                                 <color key="backgroundColor" red="0.10237745946671661" green="0.65323520092239007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -219,6 +219,15 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SxX-cv-sRE" firstAttribute="top" secondItem="OXB-ul-GAz" secondAttribute="bottom" constant="40" id="0Ak-Ar-rXI"/>
+                            <constraint firstItem="OXB-ul-GAz" firstAttribute="trailing" secondItem="K0A-aq-7GV" secondAttribute="trailingMargin" id="IV3-VW-RnP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ojv-4l-II0" secondAttribute="trailing" constant="-20" id="MXy-S2-GEk"/>
+                            <constraint firstItem="OXB-ul-GAz" firstAttribute="leading" secondItem="K0A-aq-7GV" secondAttribute="leadingMargin" id="Pie-ny-EeY"/>
+                            <constraint firstItem="Ojv-4l-II0" firstAttribute="leading" secondItem="K0A-aq-7GV" secondAttribute="leadingMargin" constant="-20" id="Rg7-TG-sJh"/>
+                            <constraint firstItem="OXB-ul-GAz" firstAttribute="top" secondItem="Ojv-4l-II0" secondAttribute="bottom" constant="42" id="ugJ-qx-2qJ"/>
+                            <constraint firstItem="Ojv-4l-II0" firstAttribute="top" secondItem="xrX-S4-arS" secondAttribute="bottom" id="zeP-Td-gBR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Where are you studying today?" id="BLv-Ff-r4c">
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ZOE-UC-zr0"/>
