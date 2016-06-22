@@ -23,6 +23,19 @@
 		D92D39D91D18CB2200A98623 /* ParseCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39D81D18CB2200A98623 /* ParseCilent.swift */; };
 		D92D39DB1D18CB3000A98623 /* UdacityCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39DA1D18CB3000A98623 /* UdacityCilent.swift */; };
 		D92D39DD1D18D18800A98623 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39DC1D18D18800A98623 /* ListTableViewCell.swift */; };
+		D92D39E91D19EFFF00A98623 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E61D19EFFF00A98623 /* Student.swift */; };
+		D92D39EA1D19EFFF00A98623 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E71D19EFFF00A98623 /* Location.swift */; };
+		D92D39EB1D19EFFF00A98623 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E81D19EFFF00A98623 /* StudentLocation.swift */; };
+		D92D39EE1D19F1A500A98623 /* FacebookCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39ED1D19F1A500A98623 /* FacebookCilent.swift */; };
+		D92D39F01D19F25100A98623 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39EF1D19F25100A98623 /* APISession.swift */; };
+		D92D39F51D19F52500A98623 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F41D19F52500A98623 /* AppConstants.swift */; };
+		D92D39F71D19F6CF00A98623 /* FacebookConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */; };
+		D92D39F91D19F9C600A98623 /* OTMDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F81D19F9C600A98623 /* OTMDataSource.swift */; };
+		D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A061D1A06C100A98623 /* MapKit.framework */; };
+		D92D3A0B1D1A070600A98623 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A081D1A070600A98623 /* Bolts.framework */; };
+		D92D3A0C1D1A070600A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */; };
+		D92D3A0D1D1A070600A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */; };
+		D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D3A101D1A09A500A98623 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +78,19 @@
 		D92D39D81D18CB2200A98623 /* ParseCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCilent.swift; sourceTree = "<group>"; };
 		D92D39DA1D18CB3000A98623 /* UdacityCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityCilent.swift; sourceTree = "<group>"; };
 		D92D39DC1D18D18800A98623 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		D92D39E61D19EFFF00A98623 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		D92D39E71D19EFFF00A98623 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D92D39E81D19EFFF00A98623 /* StudentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		D92D39ED1D19F1A500A98623 /* FacebookCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookCilent.swift; sourceTree = "<group>"; };
+		D92D39EF1D19F25100A98623 /* APISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		D92D39F41D19F52500A98623 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConstants.swift; sourceTree = "<group>"; };
+		D92D39F81D19F9C600A98623 /* OTMDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTMDataSource.swift; sourceTree = "<group>"; };
+		D92D3A061D1A06C100A98623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D92D3A081D1A070600A98623 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = OnTheMap/Bolts.framework; sourceTree = "<group>"; };
+		D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = OnTheMap/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = OnTheMap/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		D92D3A101D1A09A500A98623 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92D3A0B1D1A070600A98623 /* Bolts.framework in Frameworks */,
+				D92D3A0C1D1A070600A98623 /* FBSDKCoreKit.framework in Frameworks */,
+				D92D3A0D1D1A070600A98623 /* FBSDKLoginKit.framework in Frameworks */,
+				D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +125,7 @@
 		D92D398C1D188CFD00A98623 = {
 			isa = PBXGroup;
 			children = (
+				D92D3A0E1D1A071300A98623 /* Frameworks */,
 				D92D39971D188CFD00A98623 /* OnTheMap */,
 				D92D39AF1D188CFD00A98623 /* OnTheMapTests */,
 				D92D39BA1D188CFD00A98623 /* OnTheMapUITests */,
@@ -115,15 +146,12 @@
 		D92D39971D188CFD00A98623 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
-				D92D39981D188CFD00A98623 /* AppDelegate.swift */,
-				D92D39D71D18CA1D00A98623 /* Udacity */,
-				D92D39CC1D188E5400A98623 /* Parse */,
+				D92D3A0F1D1A07FB00A98623 /* App */,
+				D92D39EC1D19F00E00A98623 /* Modals */,
+				D92D39E51D19C33800A98623 /* Tasks */,
 				D92D39C91D188DEC00A98623 /* ViewControllers */,
-				D92D399C1D188CFD00A98623 /* Main.storyboard */,
-				D92D39A21D188CFD00A98623 /* Assets.xcassets */,
-				D92D39A41D188CFD00A98623 /* LaunchScreen.storyboard */,
-				D92D39A71D188CFD00A98623 /* Info.plist */,
-				D92D399F1D188CFD00A98623 /* OnTheMap.xcdatamodeld */,
+				D92D39F11D19F29100A98623 /* Assets */,
+				D92D39F21D19F2A300A98623 /* Data */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -174,6 +202,85 @@
 				D92D39DA1D18CB3000A98623 /* UdacityCilent.swift */,
 			);
 			name = Udacity;
+			sourceTree = "<group>";
+		};
+		D92D39E21D19C31A00A98623 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				D92D39ED1D19F1A500A98623 /* FacebookCilent.swift */,
+				D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		D92D39E51D19C33800A98623 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				D92D39F31D19F44500A98623 /* API */,
+				D92D39E21D19C31A00A98623 /* Facebook */,
+				D92D39D71D18CA1D00A98623 /* Udacity */,
+				D92D39CC1D188E5400A98623 /* Parse */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		D92D39EC1D19F00E00A98623 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				D92D3A101D1A09A500A98623 /* BorderedButton.swift */,
+				D92D39E61D19EFFF00A98623 /* Student.swift */,
+				D92D39E71D19EFFF00A98623 /* Location.swift */,
+				D92D39E81D19EFFF00A98623 /* StudentLocation.swift */,
+				D92D39F81D19F9C600A98623 /* OTMDataSource.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		D92D39F11D19F29100A98623 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D92D399C1D188CFD00A98623 /* Main.storyboard */,
+				D92D39A21D188CFD00A98623 /* Assets.xcassets */,
+				D92D39A41D188CFD00A98623 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		D92D39F21D19F2A300A98623 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D92D39A71D188CFD00A98623 /* Info.plist */,
+				D92D399F1D188CFD00A98623 /* OnTheMap.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D92D39F31D19F44500A98623 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D92D39EF1D19F25100A98623 /* APISession.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		D92D3A0E1D1A071300A98623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D92D3A081D1A070600A98623 /* Bolts.framework */,
+				D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */,
+				D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */,
+				D92D3A061D1A06C100A98623 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D92D3A0F1D1A07FB00A98623 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D92D39981D188CFD00A98623 /* AppDelegate.swift */,
+				D92D39F41D19F52500A98623 /* AppConstants.swift */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,13 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92D39EE1D19F1A500A98623 /* FacebookCilent.swift in Sources */,
+				D92D39F51D19F52500A98623 /* AppConstants.swift in Sources */,
 				D92D39DD1D18D18800A98623 /* ListTableViewCell.swift in Sources */,
+				D92D39F71D19F6CF00A98623 /* FacebookConstants.swift in Sources */,
 				D92D39A11D188CFD00A98623 /* OnTheMap.xcdatamodeld in Sources */,
+				D92D39EB1D19EFFF00A98623 /* StudentLocation.swift in Sources */,
 				D92D39D91D18CB2200A98623 /* ParseCilent.swift in Sources */,
 				D92D39DB1D18CB3000A98623 /* UdacityCilent.swift in Sources */,
 				D92D39D61D18CA1700A98623 /* UdacityConstants.swift in Sources */,
+				D92D39EA1D19EFFF00A98623 /* Location.swift in Sources */,
+				D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */,
 				D92D399B1D188CFD00A98623 /* LoginViewController.swift in Sources */,
+				D92D39F01D19F25100A98623 /* APISession.swift in Sources */,
+				D92D39E91D19EFFF00A98623 /* Student.swift in Sources */,
 				D92D39991D188CFD00A98623 /* AppDelegate.swift in Sources */,
+				D92D39F91D19F9C600A98623 /* OTMDataSource.swift in Sources */,
 				D92D39CE1D1896F300A98623 /* MapViewController.swift in Sources */,
 				D92D39CB1D188E4D00A98623 /* ParseConstants.swift in Sources */,
 				D92D39D21D18971500A98623 /* DetailViewController.swift in Sources */,
@@ -459,6 +575,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnTheMap",
+				);
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayneFaler.OnTheMap;
@@ -470,6 +590,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnTheMap",
+				);
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayneFaler.OnTheMap;
@@ -542,6 +666,7 @@
 				D92D39C21D188CFD00A98623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D92D39C31D188CFD00A98623 /* Build configuration list for PBXNativeTarget "OnTheMapTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +675,7 @@
 				D92D39C51D188CFD00A98623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D92D39C61D188CFD00A98623 /* Build configuration list for PBXNativeTarget "OnTheMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +684,7 @@
 				D92D39C81D188CFD00A98623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

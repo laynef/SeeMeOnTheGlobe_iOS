@@ -14,4 +14,11 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var tableTopLabelName: UILabel!
     @IBOutlet weak var tableBottomLabelLink: UILabel!
     
+    // Configure UI
+    
+    func configureWithStudentLocation(studentLocation: StudentLocation) {
+        tableCellImage.image = UIImage(named: "Pin")
+        tableTopLabelName.text = studentLocation.student.fullName
+        tableBottomLabelLink.text = studentLocation.student.mediaURL
+    }
 }

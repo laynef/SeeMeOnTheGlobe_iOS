@@ -13,11 +13,15 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        // Handle interaction with the native Facebook app or Safari as part of SSO authorization flow or Facebook dialogs
+        return FacebookCilents.processURL(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        return FacebookCilents.setupWithOptions(application, launchOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -36,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+            FacebookCilents.activeApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
