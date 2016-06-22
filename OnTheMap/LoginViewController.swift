@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
@@ -27,7 +29,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
-//    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
     
     // MARK: Life Cycle
     
@@ -98,7 +100,7 @@ class LoginViewController: UIViewController {
         
         func startActivityIndicatorAndFade() {
             loginButton.enabled = false
-//            facebookLoginButton.enabled = false
+            facebookLoginButton.enabled = false
             view.alpha = 0.5
         }
         
@@ -109,11 +111,11 @@ class LoginViewController: UIViewController {
             backgroundGradient.locations = [0.0, 1.0]
             backgroundGradient.frame = view.frame
             view.layer.insertSublayer(backgroundGradient, atIndex: 0)
-//            facebookLoginButton.readPermissions = ["public_profile"]
-//            facebookLoginButton.delegate = self
+            facebookLoginButton.readPermissions = ["public_profile"]
+            facebookLoginButton.delegate = self
         case .Idle:
             loginButton.enabled = true
-//            facebookLoginButton.enabled = true
+            facebookLoginButton.enabled = true
             view.alpha = 1.0
         case .LoginWithUserPass:
             startActivityIndicatorAndFade()
@@ -136,7 +138,14 @@ class LoginViewController: UIViewController {
     private func rejectWithError(error: String) {
         configureUIForState(.Idle)
         shakeUI()
-        // show alert
+        showAlert("\(error)", message: "\(error)")
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: title, style: .Default, handler: nil)
+        alertController.addAction(action)
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     private func shakeUI() {
@@ -155,40 +164,40 @@ class LoginViewController: UIViewController {
 
 // MARK: - OTMLoginViewController: FBSDKLoginButtonDelegate
 
-//extension LoginViewController: FBSDKLoginButtonDelegate {
-//    
-//    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
-//        if facebookClient.currentAccessToken() == nil {
-//            configureUIForState(.LoginWithFacebook)
-//        }
-//        return true
-//    }
-//    
-//    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-//        
-//        func displayError(error: String) {
-//            self.facebookClient.logout()
-//            self.rejectWithError(error)
-//        }
-//        
-//        configureUIForState(.LoginWithFacebook)
-//        
-//        if let token = result.token.tokenString {
-//            udacityClient.loginWithFacebookToken(token) { (userKey, error) in
-//                dispatch_async(dispatch_get_main_queue()) {
-//                    if let userKey = userKey {
-//                        self.getStudentWithUserKey(userKey)
-//                    } else {
-//                        displayError(error!.localizedDescription)
-//                    }
-//                }
-//            }
-//        } else {
-//            displayError(error!.localizedDescription)
-//        }
-//    }
-//    
-//    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-//        configureUIForState(.Idle)
-//    }
-//}
+extension LoginViewController: FBSDKLoginButtonDelegate {
+    
+    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
+        if facebookClient.currentAccessToken() == nil {
+            configureUIForState(.LoginWithFacebook)
+        }
+        return true
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
+        func displayError(error: String) {
+            self.facebookClient.logout()
+            self.rejectWithError(error)
+        }
+        
+        configureUIForState(.LoginWithFacebook)
+        
+        if let token = result.token.tokenString {
+            udacityClient.loginWithFacebookToken(token) { (userKey, error) in
+                dispatch_async(dispatch_get_main_queue()) {
+                    if let userKey = userKey {
+                        self.getStudentWithUserKey(userKey)
+                    } else {
+                        displayError(error!.localizedDescription)
+                    }
+                }
+            }
+        } else {
+            displayError(error!.localizedDescription)
+        }
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        configureUIForState(.Idle)
+    }
+}

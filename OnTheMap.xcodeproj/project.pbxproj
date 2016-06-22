@@ -32,10 +32,11 @@
 		D92D39F71D19F6CF00A98623 /* FacebookConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */; };
 		D92D39F91D19F9C600A98623 /* OTMDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F81D19F9C600A98623 /* OTMDataSource.swift */; };
 		D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A061D1A06C100A98623 /* MapKit.framework */; };
-		D92D3A0B1D1A070600A98623 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A081D1A070600A98623 /* Bolts.framework */; };
-		D92D3A0C1D1A070600A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */; };
-		D92D3A0D1D1A070600A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */; };
 		D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D3A101D1A09A500A98623 /* BorderedButton.swift */; };
+		D92D3A161D1A0FE900A98623 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A121D1A0FE900A98623 /* Bolts.framework */; };
+		D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */; };
+		D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */; };
+		D92D3A191D1A0FE900A98623 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +88,11 @@
 		D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConstants.swift; sourceTree = "<group>"; };
 		D92D39F81D19F9C600A98623 /* OTMDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTMDataSource.swift; sourceTree = "<group>"; };
 		D92D3A061D1A06C100A98623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D92D3A081D1A070600A98623 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = OnTheMap/Bolts.framework; sourceTree = "<group>"; };
-		D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = OnTheMap/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = OnTheMap/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		D92D3A101D1A09A500A98623 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		D92D3A121D1A0FE900A98623 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "FacebookSDKs-iOS-4.13.1/Bolts.framework"; sourceTree = "<group>"; };
+		D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92D3A0B1D1A070600A98623 /* Bolts.framework in Frameworks */,
-				D92D3A0C1D1A070600A98623 /* FBSDKCoreKit.framework in Frameworks */,
-				D92D3A0D1D1A070600A98623 /* FBSDKLoginKit.framework in Frameworks */,
+				D92D3A161D1A0FE900A98623 /* Bolts.framework in Frameworks */,
+				D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */,
+				D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */,
+				D92D3A191D1A0FE900A98623 /* FBSDKShareKit.framework in Frameworks */,
 				D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +269,10 @@
 		D92D3A0E1D1A071300A98623 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D92D3A081D1A070600A98623 /* Bolts.framework */,
-				D92D3A091D1A070600A98623 /* FBSDKCoreKit.framework */,
-				D92D3A0A1D1A070600A98623 /* FBSDKLoginKit.framework */,
+				D92D3A121D1A0FE900A98623 /* Bolts.framework */,
+				D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */,
+				D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */,
+				D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */,
 				D92D3A061D1A06C100A98623 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -578,6 +582,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OnTheMap",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4.13.1",
 				);
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -593,6 +598,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OnTheMap",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4.13.1",
 				);
 				INFOPLIST_FILE = OnTheMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
