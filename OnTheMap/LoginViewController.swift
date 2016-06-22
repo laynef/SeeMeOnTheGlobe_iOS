@@ -10,13 +10,13 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     // MARK: - Login State
 
     private enum LoginState { case Init, Idle, LoginWithUserPass, LoginWithFacebook }
     
-    // MARK: Properties
+    // MARK: - Properties
     
     private let udacityClient = UdacityCilent.sharedClient()
     private let facebookClient = FacebookCilents.sharedClient()
@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +47,9 @@ class LoginViewController: UIViewController {
         }
     }
     
-    // MARK: Actions
+    // MARK: - Actions
     
-    @IBAction func loginTapped(sender: AnyObject) {
+    @IBAction func loginTapped(sender: AnyObject!) {
         configureUIForState(.LoginWithUserPass)
         
         if emailTextfield.text!.isEmpty || passwordTextfield.text!.isEmpty {
@@ -67,7 +67,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func signUpTapped(sender: AnyObject) {
+    @IBAction func signUpTapped(sender: UIButton!) {
         if let signUpURL = NSURL(string: UdacityCilent.UdacityCommon.SignUpURL) where UIApplication.sharedApplication().canOpenURL(signUpURL) {
             UIApplication.sharedApplication().openURL(signUpURL)
         }
@@ -88,13 +88,13 @@ class LoginViewController: UIViewController {
         }
     }
     
-    // MARK: Login
+    // MARK: - Login
     
     private func login() {
         performSegueWithIdentifier("login", sender: self)
     }
     
-    // MARK: Configure UI
+    // MARK: - Configure UI
     
     private func configureUIForState(state: LoginState) {
         
@@ -105,28 +105,28 @@ class LoginViewController: UIViewController {
         }
         
         switch(state) {
-        case .Init:
-            let backgroundGradient = CAGradientLayer()
-            backgroundGradient.colors = [AppConstants.UI.LoginColorTop, AppConstants.UI.LoginColorBottom]
-            backgroundGradient.locations = [0.0, 1.0]
-            backgroundGradient.frame = view.frame
-            view.layer.insertSublayer(backgroundGradient, atIndex: 0)
-            facebookLoginButton.readPermissions = ["public_profile"]
-            facebookLoginButton.delegate = self
-        case .Idle:
-            loginButton.enabled = true
-            facebookLoginButton.enabled = true
-            view.alpha = 1.0
-        case .LoginWithUserPass:
-            startActivityIndicatorAndFade()
-        case .LoginWithFacebook:
-            startActivityIndicatorAndFade()
-            emailTextfield.text = ""
-            passwordTextfield.text = ""
-        }
+            case .Init:
+                let backgroundGradient = CAGradientLayer()
+                backgroundGradient.colors = [AppConstants.UI.LoginColorTop, AppConstants.UI.LoginColorBottom]
+                backgroundGradient.locations = [0.0, 1.0]
+                backgroundGradient.frame = view.frame
+                view.layer.insertSublayer(backgroundGradient, atIndex: 0)
+                facebookLoginButton.readPermissions = ["public_profile"]
+                facebookLoginButton.delegate = self
+            case .Idle:
+                loginButton.enabled = true
+                facebookLoginButton.enabled = true
+                view.alpha = 1.0
+            case .LoginWithUserPass:
+                startActivityIndicatorAndFade()
+            case .LoginWithFacebook:
+                startActivityIndicatorAndFade()
+                emailTextfield.text = ""
+                passwordTextfield.text = ""
+            }
     }
     
-    // MARK: Display Error
+    // MARK: - Display Error
     
     private func alertWithError(error: String) {
         configureUIForState(.Idle)
@@ -162,9 +162,9 @@ class LoginViewController: UIViewController {
     }
 }
 
-// MARK: - OTMLoginViewController: FBSDKLoginButtonDelegate
+// MARK: - OTMLoginViewController
 
-extension LoginViewController: FBSDKLoginButtonDelegate {
+extension LoginViewController {
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
         if facebookClient.currentAccessToken() == nil {

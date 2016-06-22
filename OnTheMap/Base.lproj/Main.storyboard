@@ -43,7 +43,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wH-2E-xUW"/>
-                                    <segue destination="d57-OO-cop" kind="presentation" identifier="loginSegue" id="fx1-KN-pWj"/>
+                                    <segue destination="d57-OO-cop" kind="presentation" identifier="login" id="fx1-KN-pWj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmc-HD-esk">
@@ -143,7 +143,7 @@
                             <barButtonItem systemItem="refresh" id="Typ-YZ-VWz"/>
                             <barButtonItem image="pin" id="cY7-EB-3jh" userLabel="Pin">
                                 <connections>
-                                    <segue destination="X7m-qv-vTD" kind="presentation" id="CHQ-bW-2r8"/>
+                                    <segue destination="X7m-qv-vTD" kind="presentation" id="XnC-ul-qmJ"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -284,7 +284,7 @@
                             <barButtonItem systemItem="refresh" id="ipe-Ez-1n3"/>
                             <barButtonItem image="pin" id="OGa-Bv-Pp5">
                                 <connections>
-                                    <segue destination="X7m-qv-vTD" kind="presentation" id="Ouq-Sx-xw8"/>
+                                    <segue destination="X7m-qv-vTD" kind="presentation" id="jMZ-Y5-9fh"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -507,24 +507,16 @@
                     <navigationItem key="navigationItem" id="18h-u0-6x4"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="bottomSectionView" destination="huV-8t-LMT" id="Jtm-1H-sxR"/>
                         <outlet property="bottomStackView" destination="VKu-p1-Hnv" id="IYD-01-X2h"/>
                         <outlet property="cancelButton" destination="mAr-7h-qah" id="P9u-zK-Hij"/>
                         <outlet property="detailTitleLabel" destination="fJH-T3-YFi" id="6Ka-b8-KOw"/>
-                        <outlet property="findButton" destination="LPM-CF-XzM" id="W2I-FM-LhA"/>
                         <outlet property="findOTMButton" destination="LPM-CF-XzM" id="vAG-OT-VQr"/>
-                        <outlet property="mapStringTextField" destination="g6W-VH-qyd" id="bTa-am-yTi"/>
                         <outlet property="mapTextfield" destination="g6W-VH-qyd" id="KOV-HT-qGY"/>
                         <outlet property="mapView" destination="6P8-8p-zwt" id="jAO-ks-DWh"/>
-                        <outlet property="mediaURLTextField" destination="0J3-pf-0uO" id="khP-No-zJC"/>
                         <outlet property="mediaURLTextfield" destination="0J3-pf-0uO" id="Veu-Zk-Lh9"/>
-                        <outlet property="middleSectionView" destination="1Fv-v5-cZP" id="NdG-qu-Wm0"/>
                         <outlet property="middleStackView" destination="72W-6x-kN2" id="2a8-hC-IEC"/>
-                        <outlet property="postingMapView" destination="6P8-8p-zwt" id="1Bc-hM-QKj"/>
-                        <outlet property="studyingLabel" destination="fJH-T3-YFi" id="zpS-mV-uYw"/>
                         <outlet property="submitButton" destination="2QZ-KA-sxo" id="toO-yZ-sry"/>
                         <outlet property="tapGesture" destination="OZG-WG-QN5" id="jXT-cq-XDC"/>
-                        <outlet property="topSectionView" destination="pGA-Pm-DUl" id="eEu-NI-0aH"/>
                         <outlet property="topStackView" destination="R2z-oO-aI5" id="bvA-kH-fcj"/>
                     </connections>
                 </viewController>
@@ -535,7 +527,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4312" y="811"/>
+            <point key="canvasLocation" x="4315" y="811"/>
         </scene>
     </scenes>
     <resources>
@@ -545,6 +537,6 @@
         <image name="udacity" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ouq-Sx-xw8"/>
+        <segue reference="XnC-ul-qmJ"/>
     </inferredMetricsTieBreakers>
 </document>

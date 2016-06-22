@@ -36,7 +36,6 @@
 		D92D3A161D1A0FE900A98623 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A121D1A0FE900A98623 /* Bolts.framework */; };
 		D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */; };
 		D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */; };
-		D92D3A191D1A0FE900A98623 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */; };
 		D92D3A1B1D1A127600A98623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +92,6 @@
 		D92D3A121D1A0FE900A98623 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "FacebookSDKs-iOS-4.13.1/Bolts.framework"; sourceTree = "<group>"; };
 		D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
-		D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 				D92D3A161D1A0FE900A98623 /* Bolts.framework in Frameworks */,
 				D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */,
 				D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */,
-				D92D3A191D1A0FE900A98623 /* FBSDKShareKit.framework in Frameworks */,
 				D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +272,6 @@
 				D92D3A121D1A0FE900A98623 /* Bolts.framework */,
 				D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */,
 				D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */,
-				D92D3A151D1A0FE900A98623 /* FBSDKShareKit.framework */,
 				D92D3A061D1A06C100A98623 /* MapKit.framework */,
 			);
 			name = Frameworks;
