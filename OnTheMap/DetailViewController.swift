@@ -174,11 +174,12 @@ class DetailViewController: UIViewController {
                 self.topStackView.backgroundColor = AppConstants.UI.OTMGreyColor
                 self.middleStackView.backgroundColor = AppConstants.UI.OTMBlueColor
                 self.bottomStackView.backgroundColor = AppConstants.UI.OTMGreyColor
-                self.mediaURLTextfield.hidden = true
+                self.mediaURLTextfield.hidden = false
                 self.mapTextfield.hidden = false
                 self.cancelButton.setTitleColor(AppConstants.UI.OTMBlueColor, forState: .Normal)
-                self.submitButton.hidden = true
+                self.submitButton.hidden = false
                 self.detailTitleLabel.hidden = false
+                self.findOTMButton.hidden = false
             case .MediaURL:
                 if let location = location {
                     self.mapView.centerCoordinate = location
@@ -187,11 +188,11 @@ class DetailViewController: UIViewController {
                 self.middleStackView.backgroundColor = UIColor.clearColor()
                 self.bottomStackView.backgroundColor = AppConstants.UI.OTMBlueColor
                 self.mediaURLTextfield.hidden = false
-                self.mapTextfield.hidden = true
+                self.mapTextfield.hidden = false
                 self.cancelButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-                self.findOTMButton.hidden = true
+                self.findOTMButton.hidden = false
                 self.submitButton.hidden = false
-                self.detailTitleLabel.hidden = true
+                self.detailTitleLabel.hidden = false
             }
         }
     }
