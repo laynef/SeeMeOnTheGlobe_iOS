@@ -24,6 +24,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
@@ -99,6 +100,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     private func configureUIForState(state: LoginState) {
         
         func startActivityIndicatorAndFade() {
+            activityIndicator.hidden = false
+            activityIndicator.startAnimating()
             loginButton.enabled = false
             facebookLoginButton.enabled = false
             view.alpha = 0.5
@@ -115,6 +118,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 facebookLoginButton.delegate = self
             case .Idle:
                 loginButton.enabled = true
+                activityIndicator.hidden = true
+                activityIndicator.stopAnimating()
                 facebookLoginButton.enabled = true
                 view.alpha = 1.0
             case .LoginWithUserPass:

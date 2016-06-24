@@ -74,6 +74,9 @@
                                     <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRC-ST-Lhq"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xex-6g-Fnt">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.63878731030000002" green="0.80999447599999996" blue="0.64901571589999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -89,17 +92,20 @@
                             <constraint firstItem="j5y-eI-O7A" firstAttribute="centerX" secondItem="ssL-OV-jQi" secondAttribute="centerX" id="NiN-rH-fK9"/>
                             <constraint firstItem="Q3B-S4-ecp" firstAttribute="leading" secondItem="9Wy-hP-plw" secondAttribute="leading" id="Ryj-xg-rfJ"/>
                             <constraint firstItem="rmc-HD-esk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UyJ-3D-Eha"/>
+                            <constraint firstItem="xex-6g-Fnt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WqL-v2-pal"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bEw-mm-sXu" secondAttribute="bottom" constant="45" id="Z8f-ZQ-LhX"/>
                             <constraint firstItem="9Wy-hP-plw" firstAttribute="top" secondItem="Q3B-S4-ecp" secondAttribute="bottom" constant="8" id="aME-qK-yzX"/>
                             <constraint firstItem="9Wy-hP-plw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bF7-Nt-Jdz"/>
                             <constraint firstItem="rmc-HD-esk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dC6-sK-VvM"/>
                             <constraint firstItem="IHl-jp-vSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dJj-qf-kyE"/>
                             <constraint firstItem="Q3B-S4-ecp" firstAttribute="leading" secondItem="bEw-mm-sXu" secondAttribute="leading" id="gH0-rU-YjI"/>
+                            <constraint firstItem="xex-6g-Fnt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofu-eR-dhx"/>
                             <constraint firstItem="ssL-OV-jQi" firstAttribute="top" secondItem="j5y-eI-O7A" secondAttribute="bottom" constant="8" symbolic="YES" id="qx7-YL-xW1"/>
                             <constraint firstItem="Q3B-S4-ecp" firstAttribute="trailing" secondItem="bEw-mm-sXu" secondAttribute="trailing" id="tZx-pI-H8C"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="xex-6g-Fnt" id="kjo-02-JPK"/>
                         <outlet property="emailTextfield" destination="IHl-jp-vSu" id="sCX-Jc-Zsr"/>
                         <outlet property="facebookLoginButton" destination="bEw-mm-sXu" id="9Vx-UN-rXo"/>
                         <outlet property="loginButton" destination="Q3B-S4-ecp" id="Adf-d8-Qdi"/>
@@ -437,10 +443,14 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="82P-85-BqV">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="82P-85-BqV" firstAttribute="centerX" secondItem="dsC-NL-4QH" secondAttribute="centerX" id="0YJ-Me-sgM"/>
                             <constraint firstItem="PZb-EK-5aj" firstAttribute="top" secondItem="huV-8t-LMT" secondAttribute="bottom" id="0gj-of-yiE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pGA-Pm-DUl" secondAttribute="trailing" constant="-20" id="123-mg-LdL"/>
                             <constraint firstItem="6P8-8p-zwt" firstAttribute="top" secondItem="dsC-NL-4QH" secondAttribute="topMargin" id="1tG-Kk-MjE"/>
@@ -457,6 +467,7 @@
                             <constraint firstItem="xFG-WI-Inj" firstAttribute="leading" secondItem="dsC-NL-4QH" secondAttribute="leadingMargin" constant="-20" id="gIW-dL-Pei"/>
                             <constraint firstItem="pGA-Pm-DUl" firstAttribute="width" secondItem="R2z-oO-aI5" secondAttribute="width" id="gbQ-IA-eE9"/>
                             <constraint firstItem="pGA-Pm-DUl" firstAttribute="leading" secondItem="dsC-NL-4QH" secondAttribute="leadingMargin" constant="-20" id="iMf-Mb-7g1"/>
+                            <constraint firstItem="82P-85-BqV" firstAttribute="centerY" secondItem="dsC-NL-4QH" secondAttribute="centerY" id="iWj-Wi-WTm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xFG-WI-Inj" secondAttribute="trailing" constant="-20" id="oY6-0J-fEG"/>
                             <constraint firstItem="huV-8t-LMT" firstAttribute="top" secondItem="1Fv-v5-cZP" secondAttribute="bottom" id="ohk-cu-WNO"/>
                             <constraint firstItem="pGA-Pm-DUl" firstAttribute="height" secondItem="R2z-oO-aI5" secondAttribute="height" id="rYI-SW-wrN"/>
@@ -472,6 +483,7 @@
                     <navigationItem key="navigationItem" id="18h-u0-6x4"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="82P-85-BqV" id="zm4-sd-oac"/>
                         <outlet property="bottomStackView" destination="huV-8t-LMT" id="XVU-7q-2BP"/>
                         <outlet property="cancelButton" destination="mAr-7h-qah" id="P9u-zK-Hij"/>
                         <outlet property="detailTitleLabel" destination="fJH-T3-YFi" id="6Ka-b8-KOw"/>

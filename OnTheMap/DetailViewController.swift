@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var topStackView: UIView!
     @IBOutlet weak var middleStackView: UIView!
     @IBOutlet weak var bottomStackView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: LoginState
     
@@ -83,6 +84,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func submitStudentLocation(sender: AnyObject) {
+        
+        activityIndicator.hidden = false
+        activityIndicator.startAnimating()
         
         // check for empty string
         if mediaURLTextfield.text!.isEmpty {
@@ -163,6 +167,10 @@ class DetailViewController: UIViewController {
         
         mapTextfield.delegate = self
         mediaURLTextfield.delegate = self
+        
+        activityIndicator.hidden = true
+        activityIndicator.stopAnimating()
+
     }
     
     private func configureUI(state: PostingState, location: CLLocationCoordinate2D? = nil) {
@@ -200,11 +208,15 @@ class DetailViewController: UIViewController {
     // MARK: Configure UI (Activity)
     
     private func startActivity() {
+        activityIndicator.hidden = false
+        activityIndicator.startAnimating()
         setFindingUIEnabled(false)
         setFindingUIAlpha(0.5)
     }
     
     private func stopActivity() {
+        activityIndicator.hidden = true
+        activityIndicator.stopAnimating()
         setFindingUIEnabled(true)
         setFindingUIAlpha(1.0)
     }
