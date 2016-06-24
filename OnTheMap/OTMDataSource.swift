@@ -59,7 +59,7 @@ extension OTMDataSource: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("StudentLocationTableViewCell") as! ListTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ListTableViewCell") as! ListTableViewCell
         let studentLocation = studentLocations[indexPath.item]
         cell.configureWithStudentLocation(studentLocation)
         return cell

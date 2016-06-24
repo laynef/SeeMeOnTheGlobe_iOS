@@ -14,10 +14,6 @@ class MapViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet weak var mainMapView: MKMapView!
-    @IBOutlet weak var mapRefreshButton: UIBarButtonItem!
-    @IBOutlet weak var logoutMapButton: UIBarButtonItem!
-    @IBOutlet weak var mapPinButton: UIBarButtonItem!
-    
     
     // MARK: Properties
     
@@ -68,7 +64,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let reuseId = "OTMPin" // "OTMPin" or "Pin"
+        let reuseId = "Pin"
         
         var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
         

@@ -37,6 +37,7 @@
 		D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */; };
 		D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */; };
 		D92D3A1B1D1A127600A98623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */; };
+		D932FE781D1DC6B000DC215B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932FE771D1DC6B000DC215B /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D932FE771D1DC6B000DC215B /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				D92D39D11D18971500A98623 /* DetailViewController.swift */,
 				D92D39D31D18A52700A98623 /* ListTableViewController.swift */,
 				D92D39DC1D18D18800A98623 /* ListTableViewCell.swift */,
+				D932FE771D1DC6B000DC215B /* TabViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				D92D39EA1D19EFFF00A98623 /* Location.swift in Sources */,
 				D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */,
 				D92D399B1D188CFD00A98623 /* LoginViewController.swift in Sources */,
+				D932FE781D1DC6B000DC215B /* TabViewController.swift in Sources */,
 				D92D39F01D19F25100A98623 /* APISession.swift in Sources */,
 				D92D39E91D19EFFF00A98623 /* Student.swift in Sources */,
 				D92D39991D188CFD00A98623 /* AppDelegate.swift in Sources */,

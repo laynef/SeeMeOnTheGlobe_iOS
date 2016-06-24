@@ -15,13 +15,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var submitButton: BorderedButton!
     @IBOutlet weak var mapTextfield: UITextField!
     @IBOutlet weak var mediaURLTextfield: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var detailTitleLabel: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet var tapGesture: UITapGestureRecognizer!
-    @IBOutlet weak var topStackView: UIStackView!
-    @IBOutlet weak var middleStackView: UIStackView!
-    @IBOutlet weak var bottomStackView: UIStackView!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var topStackView: UIView!
+    @IBOutlet weak var middleStackView: UIView!
+    @IBOutlet weak var bottomStackView: UIView!
     
     // MARK: LoginState
     
@@ -49,6 +48,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func findOnTheMap(sender: AnyObject) {
+        
         
         // check for empty string
         if mapTextfield.text!.isEmpty {
