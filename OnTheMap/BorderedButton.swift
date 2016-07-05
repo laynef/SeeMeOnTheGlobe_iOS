@@ -2,8 +2,8 @@
 //  BorderedButton.swift
 //  OnTheMap
 //
-//  ADAPTED by Jarrod Parkes on 11/8/15.
-//  Copyright (c) 2015 Udacity. All rights reserved.
+//  Created by Layne Faler on 7/5/16.
+//  Copyright © 2016 Layne Faler. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import UIKit
 
 @IBDesignable
 class BorderedButton: UIButton {
-
+    
     // MARK: IBInspectable
     
     @IBInspectable var backingColor: UIColor = UIColor.clearColor() {
@@ -28,14 +28,14 @@ class BorderedButton: UIButton {
             }
         }
     }
-
+    
     @IBInspectable var cornerRadius: CGFloat = 4.0 {
         didSet {
             layer.masksToBounds = true
             layer.cornerRadius = cornerRadius
         }
     }
-
+    
     // MARK: Tracking
     
     override func beginTrackingWithTouch(touch: UITouch, withEvent: UIEvent?) -> Bool {

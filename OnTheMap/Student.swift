@@ -2,8 +2,8 @@
 //  Student.swift
 //  OnTheMap
 //
-//  Created by Jarrod Parkes on 11/8/15.
-//  Copyright © 2015 JarrodParkes. All rights reserved.
+//  Created by Layne Faler on 7/5/16.
+//  Copyright © 2016 Layne Faler. All rights reserved.
 //
 
 // MARK: - Student

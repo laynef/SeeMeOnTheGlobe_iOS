@@ -23,21 +23,21 @@
 		D92D39D91D18CB2200A98623 /* ParseCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39D81D18CB2200A98623 /* ParseCilent.swift */; };
 		D92D39DB1D18CB3000A98623 /* UdacityCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39DA1D18CB3000A98623 /* UdacityCilent.swift */; };
 		D92D39DD1D18D18800A98623 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39DC1D18D18800A98623 /* ListTableViewCell.swift */; };
-		D92D39E91D19EFFF00A98623 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E61D19EFFF00A98623 /* Student.swift */; };
-		D92D39EA1D19EFFF00A98623 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E71D19EFFF00A98623 /* Location.swift */; };
-		D92D39EB1D19EFFF00A98623 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39E81D19EFFF00A98623 /* StudentLocation.swift */; };
 		D92D39EE1D19F1A500A98623 /* FacebookCilent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39ED1D19F1A500A98623 /* FacebookCilent.swift */; };
 		D92D39F01D19F25100A98623 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39EF1D19F25100A98623 /* APISession.swift */; };
 		D92D39F51D19F52500A98623 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F41D19F52500A98623 /* AppConstants.swift */; };
 		D92D39F71D19F6CF00A98623 /* FacebookConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */; };
 		D92D39F91D19F9C600A98623 /* OTMDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D39F81D19F9C600A98623 /* OTMDataSource.swift */; };
 		D92D3A071D1A06C100A98623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A061D1A06C100A98623 /* MapKit.framework */; };
-		D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D3A101D1A09A500A98623 /* BorderedButton.swift */; };
 		D92D3A161D1A0FE900A98623 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A121D1A0FE900A98623 /* Bolts.framework */; };
 		D92D3A171D1A0FE900A98623 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */; };
 		D92D3A181D1A0FE900A98623 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */; };
 		D92D3A1B1D1A127600A98623 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */; };
 		D932FE781D1DC6B000DC215B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932FE771D1DC6B000DC215B /* TabViewController.swift */; };
+		D991ECEE1D2C4A4600073D17 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991ECED1D2C4A4600073D17 /* StudentLocation.swift */; };
+		D991ECF01D2C4A6800073D17 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991ECEF1D2C4A6800073D17 /* BorderedButton.swift */; };
+		D991ECF21D2C4A8200073D17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991ECF11D2C4A8200073D17 /* Location.swift */; };
+		D991ECF41D2C4AA000073D17 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D991ECF31D2C4AA000073D17 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,21 +80,21 @@
 		D92D39D81D18CB2200A98623 /* ParseCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCilent.swift; sourceTree = "<group>"; };
 		D92D39DA1D18CB3000A98623 /* UdacityCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityCilent.swift; sourceTree = "<group>"; };
 		D92D39DC1D18D18800A98623 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
-		D92D39E61D19EFFF00A98623 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		D92D39E71D19EFFF00A98623 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		D92D39E81D19EFFF00A98623 /* StudentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
 		D92D39ED1D19F1A500A98623 /* FacebookCilent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookCilent.swift; sourceTree = "<group>"; };
 		D92D39EF1D19F25100A98623 /* APISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		D92D39F41D19F52500A98623 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		D92D39F61D19F6CF00A98623 /* FacebookConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConstants.swift; sourceTree = "<group>"; };
 		D92D39F81D19F9C600A98623 /* OTMDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTMDataSource.swift; sourceTree = "<group>"; };
 		D92D3A061D1A06C100A98623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D92D3A101D1A09A500A98623 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		D92D3A121D1A0FE900A98623 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "FacebookSDKs-iOS-4.13.1/Bolts.framework"; sourceTree = "<group>"; };
 		D92D3A131D1A0FE900A98623 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		D92D3A141D1A0FE900A98623 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.13.1/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		D92D3A1A1D1A127600A98623 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D932FE771D1DC6B000DC215B /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		D991ECED1D2C4A4600073D17 /* StudentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		D991ECEF1D2C4A6800073D17 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		D991ECF11D2C4A8200073D17 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D991ECF31D2C4AA000073D17 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,11 +233,11 @@
 		D92D39EC1D19F00E00A98623 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				D92D3A101D1A09A500A98623 /* BorderedButton.swift */,
-				D92D39E61D19EFFF00A98623 /* Student.swift */,
-				D92D39E71D19EFFF00A98623 /* Location.swift */,
-				D92D39E81D19EFFF00A98623 /* StudentLocation.swift */,
 				D92D39F81D19F9C600A98623 /* OTMDataSource.swift */,
+				D991ECED1D2C4A4600073D17 /* StudentLocation.swift */,
+				D991ECEF1D2C4A6800073D17 /* BorderedButton.swift */,
+				D991ECF11D2C4A8200073D17 /* Location.swift */,
+				D991ECF31D2C4AA000073D17 /* Student.swift */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -435,22 +435,22 @@
 				D92D39DD1D18D18800A98623 /* ListTableViewCell.swift in Sources */,
 				D92D39F71D19F6CF00A98623 /* FacebookConstants.swift in Sources */,
 				D92D39A11D188CFD00A98623 /* OnTheMap.xcdatamodeld in Sources */,
-				D92D39EB1D19EFFF00A98623 /* StudentLocation.swift in Sources */,
 				D92D39D91D18CB2200A98623 /* ParseCilent.swift in Sources */,
 				D92D39DB1D18CB3000A98623 /* UdacityCilent.swift in Sources */,
 				D92D39D61D18CA1700A98623 /* UdacityConstants.swift in Sources */,
-				D92D39EA1D19EFFF00A98623 /* Location.swift in Sources */,
-				D92D3A111D1A09A500A98623 /* BorderedButton.swift in Sources */,
+				D991ECEE1D2C4A4600073D17 /* StudentLocation.swift in Sources */,
 				D92D399B1D188CFD00A98623 /* LoginViewController.swift in Sources */,
 				D932FE781D1DC6B000DC215B /* TabViewController.swift in Sources */,
 				D92D39F01D19F25100A98623 /* APISession.swift in Sources */,
-				D92D39E91D19EFFF00A98623 /* Student.swift in Sources */,
+				D991ECF21D2C4A8200073D17 /* Location.swift in Sources */,
 				D92D39991D188CFD00A98623 /* AppDelegate.swift in Sources */,
 				D92D39F91D19F9C600A98623 /* OTMDataSource.swift in Sources */,
 				D92D39CE1D1896F300A98623 /* MapViewController.swift in Sources */,
 				D92D39CB1D188E4D00A98623 /* ParseConstants.swift in Sources */,
 				D92D39D21D18971500A98623 /* DetailViewController.swift in Sources */,
 				D92D39D41D18A52700A98623 /* ListTableViewController.swift in Sources */,
+				D991ECF41D2C4AA000073D17 /* Student.swift in Sources */,
+				D991ECF01D2C4A6800073D17 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
